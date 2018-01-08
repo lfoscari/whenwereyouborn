@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>When were you born?</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Search Engine -->
+    <meta name="description" content="When were you born? When were you born? When were you born? When were you born? When were you born? When were you born? When were you born? When were you born?">
+    <meta name="image" content="https://s18.postimg.org/5pster1a1/social.jpg">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="When were you born?">
+    <meta itemprop="description" content="When were you born? When were you born? When were you born? When were you born? When were you born? When were you born? When were you born? When were you born?">
+    <meta itemprop="image" content="https://s18.postimg.org/5pster1a1/social.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="When were you born?">
+    <meta name="twitter:description" content="When were you born? When were you born? When were you born? When were you born? When were you born? When were you born? When were you born? When were you born?">
+    <meta name="twitter:site" content="@LuigiFoscari">
+    <meta name="twitter:creator" content="@LuigiFoscari">
+    <meta name="twitter:image:src" content="https://s18.postimg.org/5pster1a1/social.jpg">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="When were you born?">
+    <meta name="og:description" content="When were you born? When were you born? When were you born? When were you born? When were you born? When were you born? When were you born? When were you born?">
+    <meta name="og:image" content="https://s18.postimg.org/5pster1a1/social.jpg">
+    <meta name="og:url" content="http://2.225.248.176">
+    <meta name="og:site_name" content="When were you born?">
+    <meta name="og:type" content="website">
+  </head>
+  <body id="top">
+
+    <main>
+      <h1>When were you born?</h1>
+      <form id="form">
+        <input type="text" autocomplete="off" pattern="\d*" oninput="checkThenMove(this.name)" required placeholder="05" maxlength="2" name="day">
+        <span>/</span>
+        <input type="text" autocomplete="off" pattern="\d*" oninput="checkThenMove(this.name)" required placeholder="07" maxlength="2" name="month">
+        <span>/</span>
+        <input type="text" autocomplete="off" pattern="\d*" oninput="checkThenMove(this.name)" required placeholder="1998" maxlength="4" name="year" >
+      </form>
+    </main>
+
+    <div class="error"><span>Please insert valid data</span></div>
+    <div class="output">
+    </div>
+    <div class="why">
+      <h1>Since you were born these are the people who died on your bithday, while you were partiing.</h1>
+      <a id="again" onclick="scrollToTop(); return false">
+        Start over
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" width="16" height="16"><g class="nc-icon-wrapper" fill="#ffffff"><polyline fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" points="9.5,1.5 9.5,15.5 1.5,15.5 " data-color="color-2"></polyline> <polyline fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="14.5,6.5 9.5,1.5 4.5,6.5 "></polyline></g></svg>
+      </a>
+      <h4><a href="http://lfoscari.com">Created by Luigi Foscari</a></h4>
+    </div>
+
+    <script src="magic.js" charset="utf-8"></script>
+  </body>
+</html>

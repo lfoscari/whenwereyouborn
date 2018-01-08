@@ -1,0 +1,93 @@
+html {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+}
+
+// @font-face {
+//   font-family: 'TeX-Gyre-Heros';
+//   src: url("fonts/texgyreheros-regular.eot");
+//   src: url('fonts/texgyreheros-regular.eot?#iefix') format('embedded-opentype'),
+//        url( 'fonts/TeXGyreHeros-Regular.svg#TeXGyreHeros-Regular') format('svg');
+//   font-style: normal;
+//   font-weight: 400;
+//   text-rendering: optimizeLegibility;
+// }
+// @font-face {
+//   font-family: 'TeX-Gyre-Heros';
+//   src: url("fonts/texgyreheros-italic.eot");
+//   src: url('fonts/texgyreheros-italic.eot?#iefix') format('embedded-opentype'),
+//        url( 'fonts/TeXGyreHeros-Italic.svg#TeXGyreHeros-Italic') format('svg');
+//   font-style: italic;
+//   font-weight: 400;
+//   text-rendering: optimizeLegibility;
+// }
+// @font-face {
+//   font-family: 'TeX-Gyre-Heros';
+//   src: url("fonts/texgyreheros-bold.eot");
+//   src: url('fonts/texgyreheros-bold.eot?#iefix') format('embedded-opentype'),
+//        url( 'fonts/TeXGyreHeros-Bold.svg#TeXGyreHeros-Bold') format('svg');
+//   font-style: normal;
+//   font-weight: 700;
+//   text-rendering: optimizeLegibility;
+// }
+// @font-face {
+//   font-family: 'TeX-Gyre-Heros';
+//   src: url("fonts/texgyreheros-bolditalic.eot");
+//   src: url('fonts/texgyreheros-bolditalic.eot?#iefix') format('embedded-opentype'),
+//        url( 'fonts/TeXGyreHeros-BoldItalic.svg#TeXGyreHeros-BoldItalic') format('svg');
+//   font-style: italic;
+//   font-weight: 700;
+//   text-rendering: optimizeLegibility;
+// }
+
+// Sass responsive modular scale
+
+$breakpoint-large: 1260px;
+$type-scale-large: (
+  h1: 2.369rem,
+  h2: 2.369rem,
+  h3: 1.833rem,
+  h4: 1.333rem
+);
+
+$breakpoint-medium: 1080px;
+$type-scale-medium: (
+  h1: 2rem,
+  h2: 2rem,
+  h3: 1.525rem,
+  h4: 1.125rem
+);
+
+@mixin size($level) {
+  font-size: map-get($type-scale-medium, $level);
+  @media (min-width: $breakpoint-large) {
+    font-size: map-get($type-scale-large, $level);
+  }
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+}
+
+h1 {
+  @include size(h1);
+}
+
+h2 {
+  @include size(h2);
+}
+
+h3 {
+  @include size(h3);
+}
+
+h4 {
+  @include size(h4);
+}
+
+.loading {
+  @extend h1;
+  font-family: 'Verdana', monospace;
+}
